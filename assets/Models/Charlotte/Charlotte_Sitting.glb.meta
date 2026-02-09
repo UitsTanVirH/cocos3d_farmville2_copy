@@ -1,0 +1,135 @@
+{
+  "ver": "2.3.13",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "9ffe4cab-db27-4422-9dfd-c2b189123c9f",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "46532": {
+      "importer": "gltf-animation",
+      "uuid": "9ffe4cab-db27-4422-9dfd-c2b189123c9f@46532",
+      "displayName": "",
+      "id": "46532",
+      "name": "Charlotte_Sitting.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.6666666269302368
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "e2349": {
+      "importer": "gltf-mesh",
+      "uuid": "9ffe4cab-db27-4422-9dfd-c2b189123c9f@e2349",
+      "displayName": "",
+      "id": "e2349",
+      "name": "Mesh.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1032
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5767d": {
+      "importer": "gltf-skeleton",
+      "uuid": "9ffe4cab-db27-4422-9dfd-c2b189123c9f@5767d",
+      "displayName": "",
+      "id": "5767d",
+      "name": "Root.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 38
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7ffc8": {
+      "importer": "gltf-scene",
+      "uuid": "9ffe4cab-db27-4422-9dfd-c2b189123c9f@7ffc8",
+      "displayName": "",
+      "id": "7ffc8",
+      "name": "Charlotte_Sitting.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "animationImportSettings": [
+      {
+        "name": "Charlotte_Sitting",
+        "duration": 1.6666666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Charlotte_Sitting",
+            "from": 0,
+            "to": 1.6666666269302368,
+            "wrapMode": 2,
+            "previousId": "46532"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "9ffe4cab-db27-4422-9dfd-c2b189123c9f@e2349"
+      ],
+      "skeletons": [
+        "9ffe4cab-db27-4422-9dfd-c2b189123c9f@5767d"
+      ],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "9ffe4cab-db27-4422-9dfd-c2b189123c9f@7ffc8"
+      ]
+    }
+  }
+}

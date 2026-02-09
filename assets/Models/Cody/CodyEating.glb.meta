@@ -1,0 +1,135 @@
+{
+  "ver": "2.3.13",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "4b28c169-8526-45c9-be2b-a62bf1712bad",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "e2349": {
+      "importer": "gltf-mesh",
+      "uuid": "4b28c169-8526-45c9-be2b-a62bf1712bad@e2349",
+      "displayName": "",
+      "id": "e2349",
+      "name": "Mesh.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1153
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ac553": {
+      "importer": "gltf-animation",
+      "uuid": "4b28c169-8526-45c9-be2b-a62bf1712bad@ac553",
+      "displayName": "",
+      "id": "ac553",
+      "name": "Commentator_Cody_Eatting.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.5
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "5767d": {
+      "importer": "gltf-skeleton",
+      "uuid": "4b28c169-8526-45c9-be2b-a62bf1712bad@5767d",
+      "displayName": "",
+      "id": "5767d",
+      "name": "Root.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 38
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2e930": {
+      "importer": "gltf-scene",
+      "uuid": "4b28c169-8526-45c9-be2b-a62bf1712bad@2e930",
+      "displayName": "",
+      "id": "2e930",
+      "name": "CodyEating.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "animationImportSettings": [
+      {
+        "name": "Commentator_Cody_Eatting",
+        "duration": 1.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Commentator_Cody_Eatting",
+            "from": 0,
+            "to": 1.5,
+            "wrapMode": 2,
+            "previousId": "ac553"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "4b28c169-8526-45c9-be2b-a62bf1712bad@e2349"
+      ],
+      "skeletons": [
+        "4b28c169-8526-45c9-be2b-a62bf1712bad@5767d"
+      ],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "4b28c169-8526-45c9-be2b-a62bf1712bad@2e930"
+      ]
+    }
+  }
+}

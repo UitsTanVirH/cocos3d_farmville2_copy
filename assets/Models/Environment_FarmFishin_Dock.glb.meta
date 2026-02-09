@@ -1,0 +1,94 @@
+{
+  "ver": "2.3.13",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "01ae987c-0c02-4a9c-b7d1-ad3ec1cf1eff",
+  "files": [],
+  "subMetas": {
+    "f7bdc": {
+      "importer": "gltf-mesh",
+      "uuid": "01ae987c-0c02-4a9c-b7d1-ad3ec1cf1eff@f7bdc",
+      "displayName": "",
+      "id": "f7bdc",
+      "name": "pikes_barge_01.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1327
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2d256": {
+      "importer": "gltf-mesh",
+      "uuid": "01ae987c-0c02-4a9c-b7d1-ad3ec1cf1eff@2d256",
+      "displayName": "",
+      "id": "2d256",
+      "name": "bldg_barn_geo.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 1048
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "47bf2": {
+      "importer": "gltf-scene",
+      "uuid": "01ae987c-0c02-4a9c-b7d1-ad3ec1cf1eff@47bf2",
+      "displayName": "",
+      "id": "47bf2",
+      "name": "Environment_FarmFishin_Dock.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "01ae987c-0c02-4a9c-b7d1-ad3ec1cf1eff@f7bdc",
+        "01ae987c-0c02-4a9c-b7d1-ad3ec1cf1eff@2d256"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "01ae987c-0c02-4a9c-b7d1-ad3ec1cf1eff@47bf2"
+      ]
+    }
+  }
+}

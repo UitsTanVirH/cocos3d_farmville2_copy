@@ -1,0 +1,94 @@
+{
+  "ver": "2.3.13",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "e2900d87-d41c-4267-ae27-c84acc11d0b0",
+  "files": [],
+  "subMetas": {
+    "e2349": {
+      "importer": "gltf-mesh",
+      "uuid": "e2900d87-d41c-4267-ae27-c84acc11d0b0@e2349",
+      "displayName": "",
+      "id": "e2349",
+      "name": "Mesh.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1014
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9d1d": {
+      "importer": "gltf-skeleton",
+      "uuid": "e2900d87-d41c-4267-ae27-c84acc11d0b0@f9d1d",
+      "displayName": "",
+      "id": "f9d1d",
+      "name": "Armature.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 38
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c73fe": {
+      "importer": "gltf-scene",
+      "uuid": "e2900d87-d41c-4267-ae27-c84acc11d0b0@c73fe",
+      "displayName": "",
+      "id": "c73fe",
+      "name": "Chef.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "e2900d87-d41c-4267-ae27-c84acc11d0b0@e2349"
+      ],
+      "skeletons": [
+        "e2900d87-d41c-4267-ae27-c84acc11d0b0@f9d1d"
+      ],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "e2900d87-d41c-4267-ae27-c84acc11d0b0@c73fe"
+      ]
+    }
+  }
+}

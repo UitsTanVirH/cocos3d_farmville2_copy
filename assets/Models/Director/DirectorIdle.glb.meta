@@ -1,0 +1,135 @@
+{
+  "ver": "2.3.13",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "a4e69c5d-ab2a-481e-994e-2b514c7968b8",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "e2349": {
+      "importer": "gltf-mesh",
+      "uuid": "a4e69c5d-ab2a-481e-994e-2b514c7968b8@e2349",
+      "displayName": "",
+      "id": "e2349",
+      "name": "Mesh.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 841
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e9ab5": {
+      "importer": "gltf-animation",
+      "uuid": "a4e69c5d-ab2a-481e-994e-2b514c7968b8@e9ab5",
+      "displayName": "",
+      "id": "e9ab5",
+      "name": "director_Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.0833333730697632
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "5767d": {
+      "importer": "gltf-skeleton",
+      "uuid": "a4e69c5d-ab2a-481e-994e-2b514c7968b8@5767d",
+      "displayName": "",
+      "id": "5767d",
+      "name": "Root.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 38
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c3088": {
+      "importer": "gltf-scene",
+      "uuid": "a4e69c5d-ab2a-481e-994e-2b514c7968b8@c3088",
+      "displayName": "",
+      "id": "c3088",
+      "name": "DirectorIdle.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "animationImportSettings": [
+      {
+        "name": "director_Idle",
+        "duration": 1.0833333730697632,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "director_Idle",
+            "from": 0,
+            "to": 1.0833333730697632,
+            "wrapMode": 2,
+            "previousId": "e9ab5"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "a4e69c5d-ab2a-481e-994e-2b514c7968b8@e2349"
+      ],
+      "skeletons": [
+        "a4e69c5d-ab2a-481e-994e-2b514c7968b8@5767d"
+      ],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "a4e69c5d-ab2a-481e-994e-2b514c7968b8@c3088"
+      ]
+    }
+  }
+}

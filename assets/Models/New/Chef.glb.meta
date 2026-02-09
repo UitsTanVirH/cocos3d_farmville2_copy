@@ -1,0 +1,94 @@
+{
+  "ver": "2.3.13",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "020f571a-1744-48ee-96bc-5df9ebd695cb",
+  "files": [],
+  "subMetas": {
+    "e2349": {
+      "importer": "gltf-mesh",
+      "uuid": "020f571a-1744-48ee-96bc-5df9ebd695cb@e2349",
+      "displayName": "",
+      "id": "e2349",
+      "name": "Mesh.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1014
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9d1d": {
+      "importer": "gltf-skeleton",
+      "uuid": "020f571a-1744-48ee-96bc-5df9ebd695cb@f9d1d",
+      "displayName": "",
+      "id": "f9d1d",
+      "name": "Armature.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 38
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c73fe": {
+      "importer": "gltf-scene",
+      "uuid": "020f571a-1744-48ee-96bc-5df9ebd695cb@c73fe",
+      "displayName": "",
+      "id": "c73fe",
+      "name": "Chef.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "020f571a-1744-48ee-96bc-5df9ebd695cb@e2349"
+      ],
+      "skeletons": [
+        "020f571a-1744-48ee-96bc-5df9ebd695cb@f9d1d"
+      ],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "020f571a-1744-48ee-96bc-5df9ebd695cb@c73fe"
+      ]
+    }
+  }
+}
