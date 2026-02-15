@@ -1,122 +1,126 @@
-import {
-  _decorator,
-  Component,
-  EventMouse,
-  EventTouch,
-  Input,
-  input,
-  Node,
-  tween,
-  UIOpacity,
-} from "cc";
-import { Joystick2D } from "./Joystick2D";
-import { TapDetector } from "./TapDetector";
+import { _decorator, Component, EventMouse, EventTouch, Input, input, Node, tween, UIOpacity } from 'cc';
+import { Joystick2D } from './Joystick2D';
+import { TapDetector } from './TapDetector';
 const { ccclass, property } = _decorator;
 
-@ccclass("JoystickBehavior")
-export class JoystickBehavior extends Component {
-  @property(Node)
-  public JoystickNode: Node = null;
+@ccclass('JoystickBehavior')
+export class JoystickBehavior extends Component 
+{
+    @property(Node)
+    public JoystickNode : Node = null;
 
-  @property(Node)
-  public IgnoreNode: Node = null;
+    @property(Node)
+    public IgnoreNode : Node = null;
 
-  @property(TapDetector)
-  public TapHelper: TapDetector = null;
+    @property(TapDetector)
+    public TapHelper : TapDetector = null;
 
-  private m_isPointerDown = false;
 
-  private m_ignoredObjHit = false;
+    private m_isPointerDown = false;
 
-  start() {
-    input.on(Input.EventType.MOUSE_DOWN, this.onPointerDown, this);
+    private m_ignoredObjHit = false;
 
-    input.on(Input.EventType.TOUCH_START, this.onPointerDown, this);
+    start() 
+    {
+        input.on(Input.EventType.MOUSE_DOWN, this.onPointerDown, this);
 
-    input.on(Input.EventType.MOUSE_MOVE, this.onPointerMove, this);
+        input.on(Input.EventType.TOUCH_START, this.onPointerDown, this);
 
-    input.on(Input.EventType.TOUCH_MOVE, this.onPointerMove, this);
+        input.on(Input.EventType.MOUSE_MOVE, this.onPointerMove, this);
 
-    input.on(Input.EventType.MOUSE_UP, this.onPointerUp, this);
+        input.on(Input.EventType.TOUCH_MOVE, this.onPointerMove, this);
 
-    input.on(Input.EventType.TOUCH_END, this.onPointerUp, this);
+        input.on(Input.EventType.MOUSE_UP, this.onPointerUp, this);
 
-    const joystick = this.JoystickNode.getComponent(Joystick2D);
+        input.on(Input.EventType.TOUCH_END, this.onPointerUp, this);
 
-    joystick.StopInputEvents();
+        const joystick = this.JoystickNode.getComponent(Joystick2D);
 
-    const opacity = this.JoystickNode.getComponent(UIOpacity);
+        joystick.StopInputEvents();
 
-    this.TapHelper.registerTarget(this.IgnoreNode, 1 << 6);
+        const opacity = this.JoystickNode.getComponent(UIOpacity);
 
-    this.TapHelper.setCallback((node) => {
-      if (!(node == this.IgnoreNode)) return;
+        this.TapHelper.registerTarget(this.IgnoreNode, 1 << 6);
 
-      this.m_ignoredObjHit = true;
-    });
+        this.TapHelper.setCallback((node)=>
+        {
+            if(!(node == this.IgnoreNode)) return;
 
-    tween(opacity).to(0.3, { opacity: 10 }).start();
-  }
+            this.m_ignoredObjHit = true;
+        });
 
-  update(deltaTime: number) {}
-
-  private onPointerDown(event: EventTouch | EventMouse) {
-    if (this.m_ignoredObjHit) {
-      //this.m_ignoredObjHit = false;
-      return;
+        tween(opacity).to(0.3, {opacity : 10}).start();
     }
 
-    this.m_isPointerDown = true;
+    update(deltaTime: number) {
+        
+    }
 
-    const pointLoc = event.getUILocation();
+    private onPointerDown(event : EventTouch | EventMouse)
+    {
+        if(this.m_ignoredObjHit) 
+        {
+            //this.m_ignoredObjHit = false;
+            return;
+        };
 
-    this.JoystickNode.setWorldPosition(pointLoc.x, pointLoc.y, 0);
+        this.m_isPointerDown = true;
 
-    const joystick = this.JoystickNode.getComponent(Joystick2D);
+        const pointLoc = event.getUILocation();
 
-    joystick.onPointerDown(event);
+        this.JoystickNode.setWorldPosition(pointLoc.x, pointLoc.y, 0);
 
-    const opacity = this.JoystickNode.getComponent(UIOpacity);
+        const joystick = this.JoystickNode.getComponent(Joystick2D);
 
-    tween(opacity).to(0.1, { opacity: 255 }).start();
-  }
+        joystick.onPointerDown(event);
 
-  private onPointerMove(event: EventTouch | EventMouse) {
-    if (!this.m_isPointerDown) return;
+        const opacity = this.JoystickNode.getComponent(UIOpacity);
 
-    const joystick = this.JoystickNode.getComponent(Joystick2D);
+       tween(opacity).to(0.1, {opacity : 255}).start();
+    }
 
-    const opacity = this.JoystickNode.getComponent(UIOpacity);
+    private onPointerMove(event: EventTouch | EventMouse)
+    {
+        if(!this.m_isPointerDown) return;
 
-    if (opacity.opacity < 240) tween(opacity).to(0.1, { opacity: 255 }).start();
+        const joystick = this.JoystickNode.getComponent(Joystick2D);
 
-    joystick.onPointerMove(event);
-  }
+        const opacity = this.JoystickNode.getComponent(UIOpacity);
 
-  private onPointerUp(event: EventTouch | EventMouse) {
-    this.m_ignoredObjHit = false;
+        if(opacity.opacity < 240)
+            tween(opacity).to(0.1, {opacity : 255}).start();
 
-    this.m_isPointerDown = false;
+        joystick.onPointerMove(event);
+    }
 
-    const joystick = this.JoystickNode.getComponent(Joystick2D);
-    joystick.onPointerUp(event);
+    private onPointerUp(event : EventTouch | EventMouse)
+    {
+        this.m_ignoredObjHit = false;
 
-    const opacity = this.JoystickNode.getComponent(UIOpacity);
+        this.m_isPointerDown = false;
 
-    tween(opacity).to(0.3, { opacity: 10 }).start();
-  }
+        const joystick = this.JoystickNode.getComponent(Joystick2D);
+        joystick.onPointerUp(event);
 
-  public StopAllEvents() {
-    input.off(Input.EventType.MOUSE_DOWN, this.onPointerDown, this);
+        const opacity = this.JoystickNode.getComponent(UIOpacity);
 
-    input.off(Input.EventType.TOUCH_START, this.onPointerDown, this);
+        tween(opacity).to(0.3, {opacity : 10}).start();
+    }
 
-    input.off(Input.EventType.MOUSE_MOVE, this.onPointerMove, this);
+    public StopAllEvents()
+    {
+        input.off(Input.EventType.MOUSE_DOWN, this.onPointerDown, this);
 
-    input.off(Input.EventType.TOUCH_MOVE, this.onPointerMove, this);
+        input.off(Input.EventType.TOUCH_START, this.onPointerDown, this);
 
-    input.off(Input.EventType.MOUSE_UP, this.onPointerUp, this);
+        input.off(Input.EventType.MOUSE_MOVE, this.onPointerMove, this);
 
-    input.off(Input.EventType.TOUCH_END, this.onPointerUp, this);
-  }
+        input.off(Input.EventType.TOUCH_MOVE, this.onPointerMove, this);
+
+        input.off(Input.EventType.MOUSE_UP, this.onPointerUp, this);
+
+        input.off(Input.EventType.TOUCH_END, this.onPointerUp, this);
+    }
 }
+
+
