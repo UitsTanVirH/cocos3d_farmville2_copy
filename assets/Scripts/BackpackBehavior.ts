@@ -1,5 +1,5 @@
 import { _decorator, Component, Node, Vec3, Label, tween, Prefab, instantiate } from 'cc';
-import { BackPackObjectBehavior, ObjectType } from './BackPackObjectBehavior';
+import { BackPackObjectBehavior, ObjectType } from "./BackpackObjectBehavior";
 import { Mover, MoveType } from './Mover'
 
 const { ccclass, property } = _decorator;
