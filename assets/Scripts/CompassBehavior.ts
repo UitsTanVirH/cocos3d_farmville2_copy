@@ -2,7 +2,7 @@ import { _decorator, Component, Node } from 'cc';
 import { RestaurantManager } from './RestaurantManager';
 import { BackpackBehavior } from './BackpackBehavior';
 import { CompassArrow } from './CompassArrow';
-import { ObjectType } from './BackPackObjectBehavior';
+import { ObjectType } from "./BackpackObjectBehavior";
 import { StockpileBehavior } from './StockpileBehavior';
 const { ccclass, property } = _decorator;
 
